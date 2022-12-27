@@ -1,0 +1,1529 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0611.0333                               -->
+<workbook original-version='18.1' source-build='2022.1.3 (20221.22.0611.0333)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-off' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource caption='property_calendars' inline='true' name='federated.0f2ivad0fnmqxw1ad9ic41u9vpd2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='property_calendars' name='textscan.1bqm3tn0gcix9v10e1yfm1wr4b6g'>
+            <connection class='textscan' directory='C:/Users/ksun9/Documents/2022Summer/Tableau/Final' filename='property_calendars.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1bqm3tn0gcix9v10e1yfm1wr4b6g' name='property_calendars.csv' table='[property_calendars#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='property_id' ordinal='0' />
+            <column datatype='string' name='booking_month' ordinal='1' />
+            <column datatype='integer' name='reserved_days' ordinal='2' />
+            <column datatype='integer' name='open_days' ordinal='3' />
+            <column datatype='integer' name='blocked_days' ordinal='4' />
+            <column datatype='integer' name='revenue' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1bqm3tn0gcix9v10e1yfm1wr4b6g' name='property_calendars.csv' table='[property_calendars#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='property_id' ordinal='0' />
+            <column datatype='string' name='booking_month' ordinal='1' />
+            <column datatype='integer' name='reserved_days' ordinal='2' />
+            <column datatype='integer' name='open_days' ordinal='3' />
+            <column datatype='integer' name='blocked_days' ordinal='4' />
+            <column datatype='integer' name='revenue' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[property_calendars.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>property_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[property_id]</local-name>
+            <parent-name>[property_calendars.csv]</parent-name>
+            <remote-alias>property_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[property_calendars.csv_811A747C0ABF4EF2B17AA8EC8B10834C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>booking_month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[booking_month]</local-name>
+            <parent-name>[property_calendars.csv]</parent-name>
+            <remote-alias>booking_month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[property_calendars.csv_811A747C0ABF4EF2B17AA8EC8B10834C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reserved_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reserved_days]</local-name>
+            <parent-name>[property_calendars.csv]</parent-name>
+            <remote-alias>reserved_days</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[property_calendars.csv_811A747C0ABF4EF2B17AA8EC8B10834C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[open_days]</local-name>
+            <parent-name>[property_calendars.csv]</parent-name>
+            <remote-alias>open_days</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[property_calendars.csv_811A747C0ABF4EF2B17AA8EC8B10834C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>blocked_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[blocked_days]</local-name>
+            <parent-name>[property_calendars.csv]</parent-name>
+            <remote-alias>blocked_days</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[property_calendars.csv_811A747C0ABF4EF2B17AA8EC8B10834C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[revenue]</local-name>
+            <parent-name>[property_calendars.csv]</parent-name>
+            <remote-alias>revenue</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[property_calendars.csv_811A747C0ABF4EF2B17AA8EC8B10834C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='property_calendars.csv' datatype='table' name='[__tableau_internal_object_id__].[property_calendars.csv_811A747C0ABF4EF2B17AA8EC8B10834C]' role='measure' type='quantitative' />
+      <column caption='Blocked Days' datatype='integer' name='[blocked_days]' role='measure' type='quantitative' />
+      <column caption='Booking Month' datatype='string' name='[booking_month]' role='dimension' type='nominal' />
+      <column caption='Open Days' datatype='integer' name='[open_days]' role='measure' type='quantitative' />
+      <column caption='Property Id' datatype='integer' name='[property_id]' role='dimension' type='ordinal' />
+      <column caption='Reserved Days' datatype='integer' name='[reserved_days]' role='measure' type='quantitative' />
+      <column caption='Revenue' datatype='integer' name='[revenue]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='property_calendars.csv' id='property_calendars.csv_811A747C0ABF4EF2B17AA8EC8B10834C'>
+            <properties context=''>
+              <relation connection='textscan.1bqm3tn0gcix9v10e1yfm1wr4b6g' name='property_calendars.csv' table='[property_calendars#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='property_id' ordinal='0' />
+                  <column datatype='string' name='booking_month' ordinal='1' />
+                  <column datatype='integer' name='reserved_days' ordinal='2' />
+                  <column datatype='integer' name='open_days' ordinal='3' />
+                  <column datatype='integer' name='blocked_days' ordinal='4' />
+                  <column datatype='integer' name='revenue' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='properties' inline='true' name='federated.0u6mnzy09oeody1durhd01cxag0z' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='properties' name='textscan.1e3ulqq1f8x4uk1d9yj610qup4hu'>
+            <connection class='textscan' directory='C:/Users/ksun9/Documents/2022Summer/Tableau/Final' filename='properties.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[properties.csv].[property_id]' />
+              <expression op='[property_calendars.csv].[property_id]' />
+            </expression>
+          </clause>
+          <relation connection='textscan.1e3ulqq1f8x4uk1d9yj610qup4hu' name='properties.csv' table='[properties#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='property_id' ordinal='0' />
+              <column datatype='integer' name='num_bedrooms' ordinal='1' />
+              <column datatype='integer' name='review_count' ordinal='2' />
+              <column datatype='string' name='city' ordinal='3' />
+              <column datatype='string' name='property_size' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1e3ulqq1f8x4uk1d9yj610qup4hu' name='property_calendars.csv' table='[property_calendars#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='property_id' ordinal='0' />
+              <column datatype='string' name='booking_month' ordinal='1' />
+              <column datatype='integer' name='reserved_days' ordinal='2' />
+              <column datatype='integer' name='open_days' ordinal='3' />
+              <column datatype='integer' name='blocked_days' ordinal='4' />
+              <column datatype='integer' name='revenue' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[properties.csv].[property_id]' />
+              <expression op='[property_calendars.csv].[property_id]' />
+            </expression>
+          </clause>
+          <relation connection='textscan.1e3ulqq1f8x4uk1d9yj610qup4hu' name='properties.csv' table='[properties#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='property_id' ordinal='0' />
+              <column datatype='integer' name='num_bedrooms' ordinal='1' />
+              <column datatype='integer' name='review_count' ordinal='2' />
+              <column datatype='string' name='city' ordinal='3' />
+              <column datatype='string' name='property_size' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1e3ulqq1f8x4uk1d9yj610qup4hu' name='property_calendars.csv' table='[property_calendars#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='property_id' ordinal='0' />
+              <column datatype='string' name='booking_month' ordinal='1' />
+              <column datatype='integer' name='reserved_days' ordinal='2' />
+              <column datatype='integer' name='open_days' ordinal='3' />
+              <column datatype='integer' name='blocked_days' ordinal='4' />
+              <column datatype='integer' name='revenue' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[blocked_days]' value='[property_calendars.csv].[blocked_days]' />
+          <map key='[booking_month]' value='[property_calendars.csv].[booking_month]' />
+          <map key='[city]' value='[properties.csv].[city]' />
+          <map key='[num_bedrooms]' value='[properties.csv].[num_bedrooms]' />
+          <map key='[open_days]' value='[property_calendars.csv].[open_days]' />
+          <map key='[property_id (property_calendars.csv)]' value='[property_calendars.csv].[property_id]' />
+          <map key='[property_id]' value='[properties.csv].[property_id]' />
+          <map key='[property_size]' value='[properties.csv].[property_size]' />
+          <map key='[reserved_days]' value='[property_calendars.csv].[reserved_days]' />
+          <map key='[revenue]' value='[property_calendars.csv].[revenue]' />
+          <map key='[review_count]' value='[properties.csv].[review_count]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[properties.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[property_calendars.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>property_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[property_id]</local-name>
+            <parent-name>[properties.csv]</parent-name>
+            <remote-alias>property_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[properties.csv_6178480F1C1C473FB9E5EBB087249EC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_bedrooms</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_bedrooms]</local-name>
+            <parent-name>[properties.csv]</parent-name>
+            <remote-alias>num_bedrooms</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[properties.csv_6178480F1C1C473FB9E5EBB087249EC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[review_count]</local-name>
+            <parent-name>[properties.csv]</parent-name>
+            <remote-alias>review_count</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[properties.csv_6178480F1C1C473FB9E5EBB087249EC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[properties.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[properties.csv_6178480F1C1C473FB9E5EBB087249EC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>property_size</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[property_size]</local-name>
+            <parent-name>[properties.csv]</parent-name>
+            <remote-alias>property_size</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[properties.csv_6178480F1C1C473FB9E5EBB087249EC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>property_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[property_id (property_calendars.csv)]</local-name>
+            <parent-name>[property_calendars.csv]</parent-name>
+            <remote-alias>property_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[properties.csv_6178480F1C1C473FB9E5EBB087249EC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>booking_month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[booking_month]</local-name>
+            <parent-name>[property_calendars.csv]</parent-name>
+            <remote-alias>booking_month</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[properties.csv_6178480F1C1C473FB9E5EBB087249EC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reserved_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reserved_days]</local-name>
+            <parent-name>[property_calendars.csv]</parent-name>
+            <remote-alias>reserved_days</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[properties.csv_6178480F1C1C473FB9E5EBB087249EC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[open_days]</local-name>
+            <parent-name>[property_calendars.csv]</parent-name>
+            <remote-alias>open_days</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[properties.csv_6178480F1C1C473FB9E5EBB087249EC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>blocked_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[blocked_days]</local-name>
+            <parent-name>[property_calendars.csv]</parent-name>
+            <remote-alias>blocked_days</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[properties.csv_6178480F1C1C473FB9E5EBB087249EC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[revenue]</local-name>
+            <parent-name>[property_calendars.csv]</parent-name>
+            <remote-alias>revenue</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[properties.csv_6178480F1C1C473FB9E5EBB087249EC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Average Daily Rate' datatype='real' name='[Calculation_1436929816771670018]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG(INT([revenue]/[reserved_days]))' />
+      </column>
+      <column caption='Occupancy Rate' datatype='real' name='[Calculation_1436929816772415492]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG(INT([reserved_days]/([reserved_days]+[open_days])))' />
+      </column>
+      <column caption='Revenue per Available Location (RevPAL)' datatype='real' name='[Calculation_1436929816774008837]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1436929816771670018]*[Calculation_1436929816772415492]' />
+      </column>
+      <column caption='Number of Available Units' datatype='integer' name='[Calculation_1436929816780660743]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INT([reserved_days]+[open_days]&gt;0)' />
+      </column>
+      <column caption='Property Type' datatype='string' name='[Calculation_1436929816787865608]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='If STARTSWITH([property_size],&quot;ENT&quot;)&#13;&#10;THEN &quot;ENTIRE HOME&quot;&#13;&#10;ELSEIF STARTSWITH([property_size],&quot;PRI&quot;)&#13;&#10;THEN &quot;PRIVATE ROOM&quot;&#13;&#10;ELSEIF STARTSWITH([property_size],&quot;SHA&quot;)&#13;&#10;THEN &quot;SHARED ROOM&quot;&#13;&#10;END' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='properties.csv' datatype='table' name='[__tableau_internal_object_id__].[properties.csv_6178480F1C1C473FB9E5EBB087249EC2]' role='measure' type='quantitative' />
+      <column caption='Blocked Days' datatype='integer' name='[blocked_days]' role='measure' type='quantitative' />
+      <column caption='Booking Month' datatype='string' name='[booking_month]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Num Bedrooms' datatype='integer' name='[num_bedrooms]' role='measure' type='quantitative' />
+      <column caption='Open Days' datatype='integer' name='[open_days]' role='measure' type='quantitative' />
+      <column caption='Property Id (Property Calendars.Csv)' datatype='integer' name='[property_id (property_calendars.csv)]' role='dimension' type='ordinal' />
+      <column caption='Property Id' datatype='integer' name='[property_id]' role='dimension' type='ordinal' />
+      <column caption='Property Size' datatype='string' name='[property_size]' role='dimension' type='nominal' />
+      <column caption='Reserved Days' datatype='integer' name='[reserved_days]' role='measure' type='quantitative' />
+      <column caption='Revenue' datatype='integer' name='[revenue]' role='measure' type='quantitative' />
+      <column caption='Review Count' datatype='integer' name='[review_count]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='properties.csv' id='properties.csv_6178480F1C1C473FB9E5EBB087249EC2'>
+            <properties context=''>
+              <relation join='inner' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[properties.csv].[property_id]' />
+                    <expression op='[property_calendars.csv].[property_id]' />
+                  </expression>
+                </clause>
+                <relation connection='textscan.1e3ulqq1f8x4uk1d9yj610qup4hu' name='properties.csv' table='[properties#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='integer' name='property_id' ordinal='0' />
+                    <column datatype='integer' name='num_bedrooms' ordinal='1' />
+                    <column datatype='integer' name='review_count' ordinal='2' />
+                    <column datatype='string' name='city' ordinal='3' />
+                    <column datatype='string' name='property_size' ordinal='4' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1e3ulqq1f8x4uk1d9yj610qup4hu' name='property_calendars.csv' table='[property_calendars#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='integer' name='property_id' ordinal='0' />
+                    <column datatype='string' name='booking_month' ordinal='1' />
+                    <column datatype='integer' name='reserved_days' ordinal='2' />
+                    <column datatype='integer' name='open_days' ordinal='3' />
+                    <column datatype='integer' name='blocked_days' ordinal='4' />
+                    <column datatype='integer' name='revenue' ordinal='5' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='ADR &amp; RevPAL'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{756D9E37-3F1A-4222-8878-1FCA5A792579}' />
+    </worksheet>
+    <worksheet name='City RevPAL'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{967EDC1D-CF59-438B-BFD0-C7EDB9FAC7CA}' />
+    </worksheet>
+    <worksheet name='Number of Available Units'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0A9F06CB-0488-4302-A2B1-6008EDD6AC6A}' />
+    </worksheet>
+    <worksheet name='Occupancy Rate'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{20C4ABEC-C867-48E7-9245-C3A354DA6005}' />
+    </worksheet>
+    <worksheet name='Total Revenue'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BA67A76B-E21E-4645-967E-0AE9B1AE8279}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Data Description'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='vertical-align' id='dash-text_8' value='top' />
+          <format attr='vertical-align' id='dash-text_25' value='top' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='5' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='5250' id='7' type-v2='title' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92750' id='6' type-v2='layout-basic' w='98400' x='800' y='6250'>
+              <zone forceUpdate='true' h='53500' id='8' type-v2='text' w='98400' x='800' y='6250'>
+                <formatted-text>
+                  <run fontcolor='#333333' fontsize='10'>There are two datasets:</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontcolor='#333333' fontsize='12'>Property</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>Contains information about each of the listings at ComfyBunk.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontcolor='#333333' fontsize='10'>property_id</run>
+                  <run fontcolor='#333333' fontsize='10'>: The unique identifier for each listing.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#333333' fontsize='10'>num_bedrooms</run>
+                  <run fontcolor='#333333' fontsize='10'>: The number of bedrooms available in the unit.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#333333' fontsize='10'>review_count</run>
+                  <run fontcolor='#333333' fontsize='10'>: The total number of reviews that unit has received.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#333333' fontsize='10'>city</run>
+                  <run fontcolor='#333333' fontsize='10'>: The city where the unit is located.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#333333' fontsize='10'>property_size</run>
+                  <run fontcolor='#333333' fontsize='10'>: A string identifying if it is a shared room, private room, or entire home.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontcolor='#333333' fontsize='12'>Property Calendars</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>Contains booking information at the monthly level about each listing at ComfyBunk</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontcolor='#333333' fontsize='10'>property_id</run>
+                  <run fontcolor='#333333' fontsize='10'>: The unique identifier for each listing.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#333333' fontsize='10'>booking_month</run>
+                  <run fontcolor='#333333' fontsize='10'>: The beginning of the month for which information is aggregated.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#333333' fontsize='10'>reserved_days</run>
+                  <run fontcolor='#333333' fontsize='10'>: Number of days in the month that the unit was booked.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#333333' fontsize='10'>open_days</run>
+                  <run fontcolor='#333333' fontsize='10'>: Number of days in the month the unit was available for bookings.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#333333' fontsize='10'>blocked_days</run>
+                  <run fontcolor='#333333' fontsize='10'>: Number of days in the month the unit was unavailable for bookings.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#333333' fontsize='10'>revenue</run>
+                  <run fontcolor='#333333' fontsize='10'>: Total revenue generated by the listing in the given month.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='39250' id='25' type-v2='text' w='98400' x='800' y='59750'>
+                <formatted-text>
+                  <run fontcolor='#333333' fontsize='16'>KPI Definitions</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontcolor='#333333' fontsize='10'>Average Daily Rate</run>
+                  <run fontcolor='#333333' fontsize='10'> (ADR): Revenue / Reserved Days</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#333333' fontsize='10'>Occupancy Rate</run>
+                  <run fontcolor='#333333' fontsize='10'> (OR): Reserved Days / (Reserved Days + Open Days)</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#333333' fontsize='10'>Revenue per Available Location</run>
+                  <run fontcolor='#333333' fontsize='10'> (RevPAL): ADR * OR</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#333333' fontsize='10'>Number of Available Units: </run>
+                  <run fontcolor='#333333' fontsize='10'>Number of units that were open or reserved on the site (see Data Prep sheet)</run>
+                  <run>Æ&#10;</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='36' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='5250' id='7' type-v2='title' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='53500' id='8' type-v2='text' w='98400' x='800' y='6250'>
+                  <formatted-text>
+                    <run fontcolor='#333333' fontsize='10'>There are two datasets:</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#333333' fontsize='12'>Property</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>Contains information about each of the listings at ComfyBunk.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#333333' fontsize='10'>property_id</run>
+                    <run fontcolor='#333333' fontsize='10'>: The unique identifier for each listing.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#333333' fontsize='10'>num_bedrooms</run>
+                    <run fontcolor='#333333' fontsize='10'>: The number of bedrooms available in the unit.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#333333' fontsize='10'>review_count</run>
+                    <run fontcolor='#333333' fontsize='10'>: The total number of reviews that unit has received.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#333333' fontsize='10'>city</run>
+                    <run fontcolor='#333333' fontsize='10'>: The city where the unit is located.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#333333' fontsize='10'>property_size</run>
+                    <run fontcolor='#333333' fontsize='10'>: A string identifying if it is a shared room, private room, or entire home.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#333333' fontsize='12'>Property Calendars</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>Contains booking information at the monthly level about each listing at ComfyBunk</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#333333' fontsize='10'>property_id</run>
+                    <run fontcolor='#333333' fontsize='10'>: The unique identifier for each listing.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#333333' fontsize='10'>booking_month</run>
+                    <run fontcolor='#333333' fontsize='10'>: The beginning of the month for which information is aggregated.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#333333' fontsize='10'>reserved_days</run>
+                    <run fontcolor='#333333' fontsize='10'>: Number of days in the month that the unit was booked.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#333333' fontsize='10'>open_days</run>
+                    <run fontcolor='#333333' fontsize='10'>: Number of days in the month the unit was available for bookings.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#333333' fontsize='10'>blocked_days</run>
+                    <run fontcolor='#333333' fontsize='10'>: Number of days in the month the unit was unavailable for bookings.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#333333' fontsize='10'>revenue</run>
+                    <run fontcolor='#333333' fontsize='10'>: Total revenue generated by the listing in the given month.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='39250' id='25' type-v2='text' w='98400' x='800' y='59750'>
+                  <formatted-text>
+                    <run fontcolor='#333333' fontsize='16'>KPI Definitions</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#333333' fontsize='10'>Average Daily Rate</run>
+                    <run fontcolor='#333333' fontsize='10'> (ADR): Revenue / Reserved Days</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#333333' fontsize='10'>Occupancy Rate</run>
+                    <run fontcolor='#333333' fontsize='10'> (OR): Reserved Days / (Reserved Days + Open Days)</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#333333' fontsize='10'>Revenue per Available Location</run>
+                    <run fontcolor='#333333' fontsize='10'> (RevPAL): ADR * OR</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#333333' fontsize='10'>Number of Available Units: </run>
+                    <run fontcolor='#333333' fontsize='10'>Number of units that were open or reserved on the site (see Data Prep sheet)</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{18A2D536-95FE-414C-A04B-5CB1CBC3ECC5}' />
+    </dashboard>
+    <dashboard name='Executive Dashboard'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='5' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{6452ACA0-C458-479C-8984-1316A78149A8}' />
+    </dashboard>
+    <dashboard name='GM Dashboard'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='5' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AD11A3B9-48A6-44DA-9160-C3A3E1360DBB}' />
+    </dashboard>
+    <dashboard name='Part I: Data Prep'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='vertical-align' id='dash-text_3' value='top' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='5250' id='8' type-v2='title' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92750' id='5' type-v2='layout-basic' w='98400' x='800' y='6250'>
+              <zone forceUpdate='true' h='92750' id='3' type-v2='text' w='98400' x='800' y='6250'>
+                <formatted-text>
+                  <run fontcolor='#333333' fontsize='10'>Connect to the data in Tableau and calculate the KPIs we care about for the dataset.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>1. Take the two datasets provided and join them in Tableau. Ensure that the data are joined on the field the two datasets have in common.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>2. Create a calculated field for the Average Daily Rate. </run>
+                  <run fontcolor='#333333' fontsize='10' italic='true'>Warning</run>
+                  <run fontcolor='#333333' fontsize='10'>: Make sure to perform the calculation as an </run>
+                  <run fontcolor='#333333' fontsize='10' italic='true'>aggregated</run>
+                  <run fontcolor='#333333' fontsize='10'> field so that the calculation across multiple properties is correct. Remember that an aggregated field will appear as AGG(</run>
+                  <run fontcolor='#333333' fontsize='10' italic='true'>Field</run>
+                  <run fontcolor='#333333' fontsize='10'>) when we put it on a card or shelf.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>3. Create a calculated field for the Occupancy Rate. Like the previous calculation, make sure this is an aggregated field. </run>
+                  <run fontcolor='#333333' fontsize='10' italic='true'>Tip</run>
+                  <run fontcolor='#333333' fontsize='10'>: If done correctly, occupancy rates will end up with values between 0 and 1.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>4. Create a calculated field for the Revenue per Available Location.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>5. Create a calculated field for the Number of Available Units. </run>
+                  <run fontcolor='#333333' fontsize='10' italic='true'>Note</run>
+                  <run fontcolor='#333333' fontsize='10'>: A unit is considered “available” for a given month if the number of reserved days + open days &gt; 0. The field output should be a 1 if a unit is &quot;available&quot;, and 0 if a unit is not available.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>6. We need to clean up the “Property Size” field for our visualizations. In order to do so, we want to standardize the names and remove redundant information. Create a calculated field, “Property Type”, that has only 3 unique entries in the new field: ENTIRE HOME, PRIVATE ROOM, and SHARED ROOM. For example, the string “ENTIRE_HOME_2_BEDROOMS” should become “ENTIRE HOME”, with no underscores or references to the number of bedrooms. </run>
+                  <run fontcolor='#333333' fontsize='10' italic='true'>Tip</run>
+                  <run fontcolor='#333333' fontsize='10'>: There are several ways to create this calculated field, one suggestion is to use an IF function and looking at the first letter of the entry - there is a function called STARTSWITH that will come in handy if you go down this route.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='38' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='37' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='5250' id='8' type-v2='title' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='92750' id='3' type-v2='text' w='98400' x='800' y='6250'>
+                  <formatted-text>
+                    <run fontcolor='#333333' fontsize='10'>Connect to the data in Tableau and calculate the KPIs we care about for the dataset.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>1. Take the two datasets provided and join them in Tableau. Ensure that the data are joined on the field the two datasets have in common.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>2. Create a calculated field for the Average Daily Rate. </run>
+                    <run fontcolor='#333333' fontsize='10' italic='true'>Warning</run>
+                    <run fontcolor='#333333' fontsize='10'>: Make sure to perform the calculation as an </run>
+                    <run fontcolor='#333333' fontsize='10' italic='true'>aggregated</run>
+                    <run fontcolor='#333333' fontsize='10'> field so that the calculation across multiple properties is correct. Remember that an aggregated field will appear as AGG(</run>
+                    <run fontcolor='#333333' fontsize='10' italic='true'>Field</run>
+                    <run fontcolor='#333333' fontsize='10'>) when we put it on a card or shelf.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>3. Create a calculated field for the Occupancy Rate. Like the previous calculation, make sure this is an aggregated field. </run>
+                    <run fontcolor='#333333' fontsize='10' italic='true'>Tip</run>
+                    <run fontcolor='#333333' fontsize='10'>: If done correctly, occupancy rates will end up with values between 0 and 1.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>4. Create a calculated field for the Revenue per Available Location.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>5. Create a calculated field for the Number of Available Units. </run>
+                    <run fontcolor='#333333' fontsize='10' italic='true'>Note</run>
+                    <run fontcolor='#333333' fontsize='10'>: A unit is considered “available” for a given month if the number of reserved days + open days &gt; 0. The field output should be a 1 if a unit is &quot;available&quot;, and 0 if a unit is not available.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>6. We need to clean up the “Property Size” field for our visualizations. In order to do so, we want to standardize the names and remove redundant information. Create a calculated field, “Property Type”, that has only 3 unique entries in the new field: ENTIRE HOME, PRIVATE ROOM, and SHARED ROOM. For example, the string “ENTIRE_HOME_2_BEDROOMS” should become “ENTIRE HOME”, with no underscores or references to the number of bedrooms. </run>
+                    <run fontcolor='#333333' fontsize='10' italic='true'>Tip</run>
+                    <run fontcolor='#333333' fontsize='10'>: There are several ways to create this calculated field, one suggestion is to use an IF function and looking at the first letter of the entry - there is a function called STARTSWITH that will come in handy if you go down this route.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{486C96BE-D9B9-46E0-A3D0-60D0B390FBAE}' />
+    </dashboard>
+    <dashboard name='Part II: Visualization'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='vertical-align' id='dash-text_8' value='top' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='5' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='5250' id='7' type-v2='title' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92750' id='6' type-v2='layout-basic' w='98400' x='800' y='6250'>
+              <zone forceUpdate='true' h='92750' id='8' type-v2='text' w='98400' x='800' y='6250'>
+                <formatted-text>
+                  <run fontcolor='#333333' fontsize='10'>Before you can create your dashboards, you will need to creat the individual charts that will power the dashboards using the provided sheets. Follow the steps below to create the visualizations that the ComfyBunk executive team have decided are the most important to display on the dashboards.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>7. In the “Occupancy Rate” sheet, create a line chart that plots the KPI over time.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>a. You will need to modify the “Booking Month” field to be continuous then click on the pill to change to the MONTH aggregation.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>Note: This will be required for all graphs using the “Booking Month” field.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>b. Remove the title on the x-axis</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>c. Format the y-axis to show as a percentage (no decimal points)</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>8. In the “Number of Available Units” sheet, create a line plot that shows the number of units for each property type over time.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>9. In the “Total Revenue” sheet, create a line chart that shows the total revenue for each property type over time.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>a. Remove the x and y-axis labels</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>b. Format the values on the y-axis to be in millions of dollars (e.g. $4M)</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>10. In the “City RevPAL” sheet, create a bar chart showing the RevPal KPI for each city in 2018 and 2019, the last two years for which we have data.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>a. Remove the y-axis label</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>b. Show values in dollars (no cents)</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>c. Change the color so it does not conflict with the &quot;Number of Available Units&quot; and &quot;Total Revenue&quot; sheets.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>c. Hide the field label </run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>11. In the “ADR &amp; RevPAL” sheet, create a dual or shared axis plot showing the two KPIs over time. </run>
+                  <run fontcolor='#333333' fontsize='10' italic='true'>Note</run>
+                  <run fontcolor='#333333' fontsize='10'>: Regardless of whether you choose a dual axis or shared axis plot, your graph should only display one y-axis.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>a. Remove the titles on the x- and y-axis.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>b. Change the formatting so that the y-axis values are in $ dollars (no cents)</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>12. Add the &quot;City&quot; field to the filter in the &quot;ADR &amp; RevPAL&quot; sheet. </run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>a. Select all the cities (you will be selecting the city to filter to in your dashboard)</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontsize='10'>b. Edit the filter so that it applies to the &quot;Occupancy Rate&quot; and &quot;Number of Available Units&quot; sheets (in addition to &quot;ADR &amp; RevPAL&quot;)</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='40' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='39' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone h='5250' id='7' type-v2='title' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='92750' id='8' type-v2='text' w='98400' x='800' y='6250'>
+                  <formatted-text>
+                    <run fontcolor='#333333' fontsize='10'>Before you can create your dashboards, you will need to creat the individual charts that will power the dashboards using the provided sheets. Follow the steps below to create the visualizations that the ComfyBunk executive team have decided are the most important to display on the dashboards.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>7. In the “Occupancy Rate” sheet, create a line chart that plots the KPI over time.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>a. You will need to modify the “Booking Month” field to be continuous then click on the pill to change to the MONTH aggregation.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>Note: This will be required for all graphs using the “Booking Month” field.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>b. Remove the title on the x-axis</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>c. Format the y-axis to show as a percentage (no decimal points)</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>8. In the “Number of Available Units” sheet, create a line plot that shows the number of units for each property type over time.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>9. In the “Total Revenue” sheet, create a line chart that shows the total revenue for each property type over time.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>a. Remove the x and y-axis labels</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>b. Format the values on the y-axis to be in millions of dollars (e.g. $4M)</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>10. In the “City RevPAL” sheet, create a bar chart showing the RevPal KPI for each city in 2018 and 2019, the last two years for which we have data.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>a. Remove the y-axis label</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>b. Show values in dollars (no cents)</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>c. Change the color so it does not conflict with the &quot;Number of Available Units&quot; and &quot;Total Revenue&quot; sheets.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>c. Hide the field label </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>11. In the “ADR &amp; RevPAL” sheet, create a dual or shared axis plot showing the two KPIs over time. </run>
+                    <run fontcolor='#333333' fontsize='10' italic='true'>Note</run>
+                    <run fontcolor='#333333' fontsize='10'>: Regardless of whether you choose a dual axis or shared axis plot, your graph should only display one y-axis.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>a. Remove the titles on the x- and y-axis.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>b. Change the formatting so that the y-axis values are in $ dollars (no cents)</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>12. Add the &quot;City&quot; field to the filter in the &quot;ADR &amp; RevPAL&quot; sheet. </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>a. Select all the cities (you will be selecting the city to filter to in your dashboard)</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>b. Edit the filter so that it applies to the &quot;Occupancy Rate&quot; and &quot;Number of Available Units&quot; sheets (in addition to &quot;ADR &amp; RevPAL&quot;)</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F3472FF1-1592-4239-8ECC-1C6842269DED}' />
+    </dashboard>
+    <dashboard name='Part III: Dashboards'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='vertical-align' id='dash-text_3' value='top' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='true' h='92750' id='3' type-v2='text' w='98400' x='800' y='6250'>
+            <formatted-text>
+              <run fontcolor='#333333' fontsize='10'>There are two dashboards to create. The executive team is interested in the financial health of the organization. They would like a dashboard that includes the Total Revenue over time and the City RevPAL. </run>
+              <run>Æ&#10;&#10;</run>
+              <run fontcolor='#333333' fontsize='10'>The GM dashboard will need to reflect the city that the GMs want to drill down into. This will give them the information they need to focus on day-to-day operations for their areas.  </run>
+              <run>Æ&#10;&#10;</run>
+              <run fontcolor='#333333' fontsize='10'>13. In the &quot;Executive Dashboard&quot; sheet, create a dashboard for the executive team that shows the information from the Total Revenue and City RevPAL sheets. Use good design principles to make it succinct and easy to understand what information is being displayed. </run>
+              <run>Æ&#10;&#10;</run>
+              <run fontcolor='#333333' fontsize='10'>14. In the &quot;GM Dashboard&quot; sheet, create a dashboard for the GM team. Use good design principles to make it succinct and easy to understand what information is being displayed. Your dashboard needs to include the following details:</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#333333' fontsize='10'>a. Display the chart from the &quot;ADR &amp; RevPAL&quot;, &quot;Occupancy Rate&quot;, and &quot;Number of Available Units&quot; sheets.</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#333333' fontsize='10'>b. Include a dropdown filter for the city that updates the dashboard charts when a (single) new city is selected.</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#333333' fontsize='10'>c. Include a text box at the top giving directions to the GMs, e.g., &quot;Please select a city to update the dashboard&quot;</run>
+              <run>Æ&#10;&#10;</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='5250' id='7' type-v2='text' w='98400' x='800' y='1000'>
+            <formatted-text>
+              <run fontsize='18'>&lt;Sheet Name&gt;</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='24' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone h='5250' id='7' type-v2='text' w='98400' x='800' y='1000'>
+                  <formatted-text>
+                    <run fontsize='18'>&lt;Sheet Name&gt;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='92750' id='3' type-v2='text' w='98400' x='800' y='6250'>
+                  <formatted-text>
+                    <run fontcolor='#333333' fontsize='10'>There are two dashboards to create. The executive team is interested in the financial health of the organization. They would like a dashboard that includes the Total Revenue over time and the City RevPAL. </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>The GM dashboard will need to reflect the city that the GMs want to drill down into. This will give them the information they need to focus on day-to-day operations for their areas.  </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>13. In the &quot;Executive Dashboard&quot; sheet, create a dashboard for the executive team that shows the information from the Total Revenue and City RevPAL sheets. Use good design principles to make it succinct and easy to understand what information is being displayed. </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>14. In the &quot;GM Dashboard&quot; sheet, create a dashboard for the GM team. Use good design principles to make it succinct and easy to understand what information is being displayed. Your dashboard needs to include the following details:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>a. Display the chart from the &quot;ADR &amp; RevPAL&quot;, &quot;Occupancy Rate&quot;, and &quot;Number of Available Units&quot; sheets.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>b. Include a dropdown filter for the city that updates the dashboard charts when a (single) new city is selected.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontsize='10'>c. Include a text box at the top giving directions to the GMs, e.g., &quot;Please select a city to update the dashboard&quot;</run>
+                    <run>Æ&#10;&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9D14C729-7F9E-48C3-96F5-CEC0F0747D8F}' />
+    </dashboard>
+    <dashboard name='Part IV: Analysis'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='vertical-align' id='dash-text_8' value='top' />
+          <format attr='vertical-align' id='dash-text_9' value='top' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='5' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='5250' id='7' type-v2='title' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92750' id='6' type-v2='layout-basic' w='98400' x='800' y='6250'>
+              <zone forceUpdate='true' h='20250' id='8' type-v2='text' w='98400' x='800' y='6250'>
+                <formatted-text>
+                  <run fontsize='10'>The ComfyBunk team has been really impressed with your work! They want you to help them understand what the data is telling them about the health of the organization.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontsize='10'>15. Use both the &quot;Executive Dashboard&quot; and the &quot;GM Dashboard&quot; to look at the performance of the company as a whole and by individual cities.</run>
+                  <run>Æ&#10;</run>
+                  <run fontsize='10'>a. Give some high-level commentary on the results. Is there anything problematic in a specific city or the business as a whole? (Answer with two to three paragraphs.)</run>
+                  <run>Æ&#10;</run>
+                  <run fontsize='10'>b. Do you have any suggestions for the general business of ComfyBunk? What additional data or analyses would you like to have been able to perform? How would you augment the dashboards if given access to more data?</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='72500' id='9' type-v2='text' w='98400' x='800' y='26500'>
+                <formatted-text>
+                  <run fontsize='10'>Answer to Task 15: (double click to edit)</run>
+                  <run>&#10;a.&#10;&#10;</run>
+                  <run fontsize='10'>b. </run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='45' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='44' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone h='5250' id='7' type-v2='title' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='20250' id='8' type-v2='text' w='98400' x='800' y='6250'>
+                  <formatted-text>
+                    <run fontsize='10'>The ComfyBunk team has been really impressed with your work! They want you to help them understand what the data is telling them about the health of the organization.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontsize='10'>15. Use both the &quot;Executive Dashboard&quot; and the &quot;GM Dashboard&quot; to look at the performance of the company as a whole and by individual cities.</run>
+                    <run>Æ&#10;</run>
+                    <run fontsize='10'>a. Give some high-level commentary on the results. Is there anything problematic in a specific city or the business as a whole? (Answer with two to three paragraphs.)</run>
+                    <run>Æ&#10;</run>
+                    <run fontsize='10'>b. Do you have any suggestions for the general business of ComfyBunk? What additional data or analyses would you like to have been able to perform? How would you augment the dashboards if given access to more data?</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='72500' id='9' type-v2='text' w='98400' x='800' y='26500'>
+                  <formatted-text>
+                    <run fontsize='10'>Answer to Task 15: (double click to edit)</run>
+                    <run>&#10;a.&#10;&#10;</run>
+                    <run fontsize='10'>b. </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{50829E69-6A34-448E-BC5A-F6AE551E7E13}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='dashboard' name='Data Description'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{20FAEE43-87A2-4230-B43D-0E782D0A40B9}' />
+    </window>
+    <window class='dashboard' name='Part I: Data Prep'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{1E490518-282B-462A-A238-C287543D27CF}' />
+    </window>
+    <window class='dashboard' name='Part II: Visualization'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{881ECF98-FECE-4DD9-8059-BF2DA6F708B1}' />
+    </window>
+    <window class='dashboard' name='Part III: Dashboards'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{6AE33C65-CA19-4EEF-9391-987D1D844828}' />
+    </window>
+    <window class='dashboard' name='Part IV: Analysis'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{C08C2F06-25A0-4668-A0DF-B11B3E44A89D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Occupancy Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AA6CC0D6-0242-467E-92A6-D7F88F598611}' />
+    </window>
+    <window class='worksheet' name='Number of Available Units'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3662C83C-02E0-45DD-AC6F-0B5F54138341}' />
+    </window>
+    <window class='worksheet' name='Total Revenue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{549EEACE-0031-45EE-8CBE-4D76FD53F377}' />
+    </window>
+    <window class='worksheet' name='City RevPAL'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{18128B82-FFEB-41AA-AB7A-78CA1C026594}' />
+    </window>
+    <window class='worksheet' name='ADR &amp; RevPAL'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{93CE33E5-DFF1-4A9B-9BCC-9F2A658B53BD}' />
+    </window>
+    <window class='dashboard' name='Executive Dashboard'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{3108EA2A-763B-404A-8347-43EFCB01AAB0}' />
+    </window>
+    <window class='dashboard' name='GM Dashboard'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{DF3D1C42-2ED6-42D1-BAAF-95616C2DE687}' />
+    </window>
+  </windows>
+</workbook>
